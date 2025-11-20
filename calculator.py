@@ -1,9 +1,7 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+#https://github.com/colincampbellfrank/lab11-CF
+# Partner 1: Colin Frank
+#Could not get into contact with other partner
 
-One function per operation, in order.
-"""
 import math
 
 def add(a, b):
@@ -12,10 +10,10 @@ def add(a, b):
 def subtract(a, b):
     return (a - b)
 
-def multiply(a, b):
+def mul(a, b):
     return (a * b)
 
-def divide(a, b):
+def div(a, b):
     try:
         return (b / a)
     except ZeroDivisionError:
@@ -27,7 +25,7 @@ def logarithm(a, b):
     except ValueError:
         return "ValueError"
 
-def exponent(a, b):
+def exp(a, b):
     return (a^b)
 
 def square_root(a):
