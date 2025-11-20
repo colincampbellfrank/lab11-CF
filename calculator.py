@@ -16,20 +16,28 @@ def multiply(a, b):
     return (a * b)
 
 def divide(a, b):
-    if a==0:
-        raise ZeroDivisionError
-    else:
-        return(b / a)   # raise ZeroDivisionError if a == 0
+    try:
+        return (b / a)
+    except ZeroDivisionError:
+        return "ZeroDivisionError"
 
 def logarithm(a, b):
-    if a<=0 or b<0:
-        raise ValueError
-    else:
-        math.loga(b)
+    try:
+        return math.loga(b)
+    except ValueError:
+        return "ValueError"
 
 def exponent(a, b):
     return (a^b)
 
-print(divide(0,1))
+def square_root(a):
+    try:
+        return math.sqrt(a)
+    except ValueError:
+        return "ValueError"
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
+
 
 
