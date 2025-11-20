@@ -21,7 +21,7 @@ def div(a, b):
 
 def logarithm(a, b):
     try:
-        return math.loga(b)
+        return math.log(b,a)
     except ValueError:
         return "ValueError"
 
@@ -36,6 +36,4 @@ def square_root(a):
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
-
-
 
