@@ -20,19 +20,19 @@ class TestCalculator(unittest.TestCase):
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            calculator.log(0,10)
+            calculator.logarithm(0,10)
 
     def test_hypotenuse(self): # 3 assertions
-        self.assertEqual(calculator.hypotenuse(4, 3), 25)
-        self.assertEqual(calculator.hypotenuse(-4, 3), 25)
-        self.assertEqual(calculator.hypotenuse(-4, -3), 25)
+        self.assertEqual(calculator.hypotenuse(4, 3), 5)
+        self.assertEqual(calculator.hypotenuse(-4, 3), 5)
+        self.assertEqual(calculator.hypotenuse(-4, -3), 5)
 
     def test_sqrt(self): # 3 assertions
         with self.assertRaises(ValueError):
             calculator.sqrt(-4)
-        self.assertEqual(calculator.sqrt(100), 10)
-        self.assertEqual(calculator.sqrt(16), 4)
-        self.assertEqual(calculator.sqrt(1), 1)
+        self.assertEqual(calculator.square_root(100), 10)
+        self.assertEqual(calculator.square_root(16), 4)
+        self.assertEqual(calculator.square_root(1), 1)
 
 # Do not touch this
 if __name__ == "__main__":
