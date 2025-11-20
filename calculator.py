@@ -23,7 +23,7 @@ def logarithm(a, b):
     try:
         return math.log(b,a)
     except ValueError:
-        return "ValueError"
+        raise ValueError
 
 def exp(a, b):
     return (a^b)
@@ -32,7 +32,7 @@ def square_root(a):
     try:
         return math.sqrt(a)
     except ValueError:
-        return "ValueError"
+        raise ValueError
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
